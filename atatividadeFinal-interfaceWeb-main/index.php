@@ -8,28 +8,7 @@
     <title>Neo Street Wear</title>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <ul>
-                <li><a href="shop.html">SHOP</a></li>
-                <li><a href="sobre.html">SOBRE</a></li>
-                <span><li><a href="sale.html">SALE</a></li></span>
-            </ul>
-        </nav>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="logo da marca"></a>
-        </div>
-        <div class="pesquisar">
-            <input type="search" placeholder="O que está procurando?">
-        </div>
-        <div class="sacola">
-            <a href="sacola.html"><img id="sacola" src="images/sacola.png" alt="sacola de compras"></a>
-        </div>
-        <div class="avatar">
-            <a href="login.html"><img id="avatar" src="images/avatar.png" alt="avatar de login"></a>
-        </div>
-        
-    </header>
+    <?php require_once "layout/header.php"; ?>	
 
     <section class="banner">
         <h1>Neo Street Wear</h1>
@@ -47,31 +26,31 @@
                 <img src="images/maisvendidos/bone.jpg" alt="boné">
                 <h6>Boné Baw</h6>
                 <p>R$200,00</p>
-                <a href="produto-detalhe.html"><button>Comprar</button></a>
+                <a href="produto-detalhe.php"><button>Comprar</button></a>
             </div>
             <div class="card bloco2">
                 <img src="images/maisvendidos/moletom.png" alt="moletom">
                 <h6>Moletom Approve</h6>
                 <p>R$200,00</p>
-                <a href="produto-detalhe.html"><button>Comprar</button></a>
+                <a href="produto-detalhe.php"><button>Comprar</button></a>
             </div>
             <div class="card bloco3">
                 <img src="images/maisvendidos/tenis.png" alt="tênis">
                 <h6>Tênis Nike</h6>
                 <p>R$200,00</p>
-                <a href="produto-detalhe.html"><button>Comprar</button></a>
+                <a href="produto-detalhe.php"><button>Comprar</button></a>
             </div>
             <div class="card bloco4">
                 <img src="images/maisvendidos/jaqueta.png" alt="jaqueta">
                 <h6>Casaco Baw</h6>
                 <p>R$200,00</p>
-                <a href="produto-detalhe.html"><button>Comprar</button></a>
+                <a href="produto-detalhe.php"><button>Comprar</button></a>
             </div>
             <div class="card bloco5">
                 <img src="images/maisvendidos/meia.png" alt="meia">
                 <h6>Meia Baw</h6>
                 <p>R$200,00</p>
-                <a href="produto-detalhe.html"><button>Comprar</button></a>
+                <a href="produto-detalhe.php"><button>Comprar</button></a>
             </div>
             <div class="seta-direita">
                 <img src="images/setadireita.png" alt="seta">
@@ -80,12 +59,12 @@
     </section>
 
     <section class="shop">
-        <button><a href="shop.html"><h1>SHOP</h1></a></button>
+        <button><a href="shop.php"><h1>SHOP</h1></a></button>
     </section>
 
     <div class="vestuario">
         <button>
-            <a href="vestuario.html">
+            <a href="vestuario.php">
                 <h1>VESTUÁRIO</h1>
                 <img src="images/icone-camisa.png" alt="ícone camiseta">
             </a>
@@ -94,7 +73,7 @@
 
     <div class="underwear">
         <button>
-            <a href="underwear.html">
+            <a href="underwear.php">
                 <h1>UNDERWEAR</h1>
                 <img src="images/icone-cueca.png" alt="ícone underwear">
             </a>
@@ -103,7 +82,7 @@
 
     <div class="calcados">
         <button>
-            <a href="calcados.html">
+            <a href="calcados.php">
                 <h1>CALÇADOS</h1>
                 <img src="images/icone-tenis.png" alt="ícone calçados">
             </a>
@@ -138,14 +117,6 @@
         </button>
     </div>
 
-    <footer>
-        <div class="logo-footer">
-            <a href="index.html"><img src="images/logo.png" alt="logo da marca"></a>
-            <p>Todos os direitos reservados©</p>
-        </div>
-        <div class="contato-footer">
-            <a href="contato.html">Entre em contato conosco</a>
-        </div>
-    </footer>
+    <?php require_once "layout/footer.php"; ?>	
 </body>
 </html>

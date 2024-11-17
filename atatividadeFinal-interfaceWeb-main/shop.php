@@ -8,34 +8,15 @@
     <title>Neo Street Wear</title>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <ul>
-                <li><a href="shop.html">SHOP</a></li>
-                <li><a href="sobre.html">SOBRE</a></li>
-                <span><li><a href="sale.html">SALE</a></li></span>
-            </ul>
-        </nav>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt=""></a>
-        </div>
-        <div class="pesquisar">
-            <input type="search" placeholder="O que está procurando?">
-        </div>
-        <div class="sacola">
-            <a href="sacola.html"><img id="sacola" src="images/sacola.png" alt=""></a>
-        </div>
-        <div class="avatar">
-            <a href="login.html"><img id="avatar" src="images/avatar.png" alt=""></a>
-        </div>
-    </header>
+    <?php require_once "layout/header.php"; ?>	
+
     <section class="shop">
         <h1>SHOP</h1>
         <section class="main">
             <div class="btn">
-                <a href="vestuario.html"><button>VESTUÁRIO</button></a>
-                <a href="calcados.html"><button>CALÇADOS</button></a>
-                <a href="underwear.html"><button>UNDERWEAR</button></a>
+                <a href="vestuario.php"><button>VESTUÁRIO</button></a>
+                <a href="calcados.php"><button>CALÇADOS</button></a>
+                <a href="underwear.php"><button>UNDERWEAR</button></a>
             </div>
             <div class="img">
                 <img src="images/icone-camisa.png" alt="icone vestuario">
@@ -47,31 +28,31 @@
                     <img src="images/maisvendidos/bone.jpg" alt="boné">
                     <h6>Boné Baw</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco2">
                     <img src="images/maisvendidos/moletom.png" alt="moletom">
                     <h6>Moletom Approve</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco3">
                     <img src="images/camiseta-baw.png" alt="camiseta Baw">
                     <h6>Camisa Baw</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco4">
                     <img src="images/maisvendidos/jaqueta.png" alt="jaqueta">
                     <h6>Casaco Baw</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco5">
                     <img src="images/casaco-nike.png" alt="casaco Nike">
                     <h6>Casaco Nike</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
             </div>
 
@@ -80,31 +61,31 @@
                     <img src="images/tenis-baw.png" alt="tênis Baw roxo">
                     <h6>Tênis Baw</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco2">
                     <img src="images/tenis-approve.png" alt="tênis Approve bege">
                     <h6>Tênis Approve</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco3">
                     <img src="images/maisvendidos/tenis.png" alt="tênis Nike preto">
                     <h6>Tênis Nike</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco4">
                     <img src="images/tenis-nike-verde.png" alt="tênis Nike verde">
                     <h6>Tênis Nike</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco5">
                     <img src="images/tenis-baw-bege.png" alt="tênis Baw colorido">
                     <h6>Tênis Baw</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
             </div>
 
@@ -113,31 +94,31 @@
                     <img src="images/cueca-approve-preta.png" alt="cueca Approve preta">
                     <h6>Cueca Approve</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco2">
                     <img src="images/calcinha-approve.png" alt="calcinha Approve branca">
                     <h6>Calcinha Approve</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco3">
                     <img src="images/meia-nike.png" alt="meia Nike preta">
                     <h6>Meia Nike</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco4">
                     <img src="images/cueca-nike-cinza.png" alt="cueca Nike cinza">
                     <h6>Cueca Nike</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco5">
                     <img src="images/maisvendidos/meia.png" alt="meia Baw roxa">
                     <h6>Meia Baw</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
             </div>
         </section>
@@ -149,14 +130,6 @@
         </button>
     </div>
 
-    <footer>
-        <div class="logo-footer">
-            <a href="index.html"><img src="images/logo.png" alt="logo da marca"></a>
-            <p>Todos os direitos reservados©</p>
-        </div>
-        <div class="contato-footer">
-            <a href="contato.html">Entre em contato conosco</a>
-        </div>
-    </footer>
+    <?php require_once "layout/footer.php"; ?>	
 </body>
 </html>

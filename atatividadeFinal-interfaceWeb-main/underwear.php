@@ -8,27 +8,8 @@
     <title>Neo Street Wear</title>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <ul>
-                <li><a href="shop.html">SHOP</a></li>
-                <li><a href="sobre.html">SOBRE</a></li>
-                <span><li><a href="sale.html">SALE</a></li></span>
-            </ul>
-        </nav>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="logo da marca"></a>
-        </div>
-        <div class="pesquisar">
-            <input type="search" placeholder="O que está procurando?">
-        </div>
-        <div class="sacola">
-            <a href="sacola.html"><img id="sacola" src="images/sacola.png" alt="sacola de compras"></a>
-        </div>
-        <div class="avatar">
-            <a href="login.html"><img id="avatar" src="images/avatar.png" alt="avatar de login"></a>
-        </div>
-    </header>
+    <?php require_once "layout/header.php"; ?>	
+
     <section class="underwear">
         <h1>Underwear</h1>
         <img src="images/icone-cueca.png" alt="" class="icone-underwear">
@@ -38,31 +19,31 @@
                     <img src="images/cueca-approve-preta.png" alt="cueca Approve preta">
                     <h6>Cueca Approve</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco2">
                     <img src="images/calcinha-approve.png" alt="calcinha Approve branca">
                     <h6>Calcinha Approve</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco3">
                     <img src="images/meia-nike.png" alt="meia Nike preta">
                     <h6>Meia Nike</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco4">
                     <img src="images/cueca-nike-cinza.png" alt="cueca Nike cinza">
                     <h6>Cueca Nike</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
                 <div class="card bloco5">
                     <img src="images/maisvendidos/meia.png" alt="meia Baw roxa">
                     <h6>Meia Baw</h6>
                     <p>R$200,00</p>
-                    <a href="produto-detalhe.html"><button>Comprar</button></a>
+                    <a href="produto-detalhe.php"><button>Comprar</button></a>
                 </div>
             </div>
         </section>
@@ -74,13 +55,5 @@
         </button>
     </div>
 
-    <footer>
-        <div class="logo-footer">
-            <a href="index.html"><img src="images/logo.png" alt="logo da marca"></a>
-            <p>Todos os direitos reservados©</p>
-        </div>
-        <div class="contato-footer">
-            <a href="contato.html">Entre em contato conosco</a>
-        </div>
-    </footer>
+    <?php require_once "layout/footer.php"; ?>	
 </body>

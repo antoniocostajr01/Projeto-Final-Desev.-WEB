@@ -8,28 +8,8 @@
     <title>Neo Street Wear</title>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <ul>
-                <li><a href="shop.html">SHOP</a></li>
-                <li><a href="sobre.html">SOBRE</a></li>
-                <span><li><a href="sale.html">SALE</a></li></span>
-            </ul>
-        </nav>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="logo da marca"></a>
-        </div>
-        <div class="pesquisar">
-            <input type="search" placeholder="O que está procurando?">
-        </div>
-        <div class="sacola">
-            <a href="sacola.html"><img id="sacola" src="images/sacola.png" alt="sacola de compras"></a>
-        </div>
-        <div class="avatar">
-            <a href="login.html"><img id="avatar" src="images/avatar.png" alt="avatar de login"></a>
-        </div>
-        
-    </header>
+    <?php require_once "layout/header.php"; ?>	
+
     <div class="container">
         <section class="produto">
             <div class="imagem-produto"><img src="images/maisvendidos/jaqueta.png" alt="produto escolhido"></div>
@@ -49,7 +29,7 @@
                 </ul>
             </div>
             <div class="add-carrinho">
-                <a href="sacola.html">Adicionar ao carrinho</a>
+                <a href="sacola.php">Adicionar ao carrinho</a>
             </div>
         </section>
     </div>
