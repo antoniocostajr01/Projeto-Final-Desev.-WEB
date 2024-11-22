@@ -1,3 +1,10 @@
+<?php require_once "function.php";
+if (isset($_POST['acessar'])){
+    login($connect);
+    
+
+}
+?>	
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,16 +25,17 @@
 
         <div class="container-direita">
             <h2>LOGIN</h2>
-            <form action="">
+            <form action="" method="post">
                 <label for="email">E-mail</label>
                 <input type="email" name="email" required>
 
                 <label for="senha">Senha</label>
                 <input type="password" name="senha" required>
 
-                <button>Entrar</button>
+                <input id='button' type="submit" name="acessar" value="Acessar">
             </form>
 
+            
             <a href="#" class="botaogoogle"><img src="images/google.png" alt="icone google">Continuar com o Google</a>
             <div class="divesquecisenha"><a href="#" class="esquecisenha">Esqueci minha senha </a></div>
 

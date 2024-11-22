@@ -211,7 +211,7 @@ footer{
     font-size: 16px;
 }
 
-.container-direita button {
+.container-direita #button {
     width: 415px;
     margin-top: 10px;
     margin-bottom: 10px;
