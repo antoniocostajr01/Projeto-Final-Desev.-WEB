@@ -32,4 +32,18 @@ function login( $connect ){
     }
 }
 
+function deslogar(){
+	session_start();
+	session_unset();
+	session_destroy();
+	header("location:login.php");
+}
+
+function usuarios($connect){
+	$query = "SELECT * FROM users";
+	$action = mysqli_query($connect, $query);
+	$results = mysqli_fetch_all($action, MYSQLI_ASSOC);
+	return $results;
+}
+
 
