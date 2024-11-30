@@ -1,0 +1,226 @@
+body{
+    font-family: helvetica, verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 130px;
+    text-align: center;
+    width: 100%;
+    border-bottom: solid 2px black;
+    position: relative;
+}
+
+.nav{
+    position: absolute;
+    left: 100px;
+    top: 70px;
+}
+
+.nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+header a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(89, 92, 92);
+}
+
+header span a{
+    color: red;
+}
+
+header span a:hover{
+    color: rgb(238, 129, 129);
+}
+
+header a:hover{
+    color: rgb(165, 165, 165);
+}
+
+header .logo a img{
+    width: 177px;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pesquisar{
+    position: absolute;
+    right: 100px;
+    top: 60px;
+}
+
+header input{
+    background-image: url(../images/lupa.png);
+    background-position: 15px center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-color: rgb(219, 219, 219);
+    padding: 10px 50px;
+    padding-right: 0px;
+    border-radius: 50px;
+    border: 1px solid black;
+    width: 261px;
+    outline: none;
+}
+
+header input ::-webkit-search-cancel-button{
+    display: none;
+}
+
+.sacola{
+    position: absolute;
+    right: 52px;
+    top: 60px;
+}
+
+.sacola img{
+    height: 35px;
+    border: 1px solid   transparent;
+    transition: 0.5s;
+}
+
+.sacola img:hover{
+    opacity: 80%;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.avatar{
+    position: absolute;
+    right: 10px;
+    top: 61px;
+}
+
+.avatar img{
+    height: 27px;
+    padding: 4px;
+    border: 1px solid   transparent;
+    transition: 0.5s;
+}
+
+.avatar img:hover{
+    opacity: 80%;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.contato{
+    background-color: #684c8f;
+    overflow: hidden;
+    margin: 30px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.div1{
+    display: inline-block;
+    position: relative;
+    top: -230px;
+    padding-left: 133px;
+}
+
+.div2{
+    display: inline-block;
+    margin-left: 120px;
+}
+
+.div3{
+    display: inline-block;
+    position: relative;
+    top: -230px;
+}
+
+.contato input{
+    display: block;
+    margin-bottom: 30px;
+    background-color: #572b69;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px;
+    width: 300px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.contato textarea{
+    display: block;
+    margin-bottom: 10px;
+    height: 110px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.contato button{
+    padding: 5px;
+    border-radius: 3px;
+    border: solid 1px;
+    background-color: #391450;
+    box-shadow: 2px 2px 2px #000;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.contato button:hover{
+    background-color: #8447a9;
+    cursor: pointer;
+}
+
+.contato button:active{
+    box-shadow: none;
+}
+
+.div3 span{
+    color: #fff;
+}
+
+.div3 a img{
+    width: 30px;
+    background-color: darkgrey;
+    border-radius: 50px;
+    border: solid 1px #000;
+    margin-top: 40px;
+    padding: 5px;
+}
+
+footer{
+    background-color: #D9D9D9;
+    border-top: solid 2px black;
+}
+
+.logo-footer{
+    text-align: center;
+    padding: 30px;
+}
+
+.logo-footer img{
+    width: 150px;
+}
+
+.logo-footer p{
+    margin: 0;
+}
+
+.contato-footer{
+    text-align: center;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,500 @@
+body{
+    font-family: helvetica, verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 130px;
+    text-align: center;
+    width: 100%;
+    border-bottom: solid 2px black;
+    position: relative;
+}
+
+.nav{
+    position: absolute;
+    left: 100px;
+    top: 70px;
+}
+
+.nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+header a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(89, 92, 92);
+}
+
+header span a{
+    color: red;
+}
+
+header span a:hover{
+    color: rgb(238, 129, 129);
+}
+
+header a:hover{
+    color: rgb(165, 165, 165);
+}
+
+header .logo a img{
+    width: 177px;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pesquisar{
+    position: absolute;
+    right: 100px;
+    top: 60px;
+}
+
+header input{
+    background-image: url(../images/lupa.png);
+    background-position: 15px center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-color: rgb(219, 219, 219);
+    
+    padding: 10px 50px;
+    padding-right: 0px;
+    border-radius: 50px;
+    border: 1px solid black;
+    width: 261px;
+    outline: none;
+}
+
+header input ::-webkit-search-cancel-button{
+    display: none;
+}
+
+.sacola{
+    position: absolute;
+    right: 52px;
+    top: 60px;
+}
+
+.sacola img{
+    height: 35px;
+    border: 1px solid   transparent;
+    transition: 0.5s;
+}
+
+.sacola img:hover{
+    opacity: 80%;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.avatar{
+    position: absolute;
+    right: 10px;
+    top: 61px;
+}
+
+.avatar img{
+    height: 27px;
+    padding: 4px;
+    border: 1px solid   transparent;
+    transition: 0.5s;
+}
+
+.avatar img:hover{
+    opacity: 80%;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 700px;
+    position: relative;
+}
+
+.banner h1{  
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-style: italic;
+    text-shadow: 6px 3px 2px #000;
+    padding: 10px;
+}
+
+.maisvendidos{
+    text-align: center;
+    background-color: #D9D9D9;
+    border: solid 2px #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    height: 500px;
+    
+}
+
+.container{
+    width: 1150px;
+    position: absolute;
+    overflow: hidden;
+    background-color: #D9D9D9;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.maisvendidos h3{
+    margin: 0;
+}
+
+.seta-esquerda{
+    float: left;
+    padding-top: 145px;
+}
+
+.seta-direita{
+    float: left;
+    padding-top: 145px;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    margin: 10px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: 3px 3px 10px #000;
+}
+
+.card img{
+    width: 175px;
+    padding-top: 10px;
+}
+
+.card button{
+    background-color: #8D796E;
+    border-radius: 5px;
+    border: solid 1px #000;
+    box-shadow: 2px 2px 2px #000;
+    padding: 3px;
+}
+
+.card button:hover{
+    background-color: #b8a69d;
+    cursor: pointer;
+}
+
+.card button:active{
+    box-shadow: none;
+}
+
+.shop{
+    text-align: center;
+}
+
+.shop h1{
+    font-style: italic;
+    font-size: 50px;
+    color: #000;
+}
+
+.shop a{
+    text-decoration: none;
+}
+
+.shop a h1:hover{
+    color: #3f3e3e;
+    font-size: 50px;
+}
+
+.shop button{
+    border: 0;
+    background-color: #fff;
+}
+
+
+
+.vestuario{
+    text-align: center;  
+}
+
+.vestuario a{
+    text-decoration: none;
+    color: #000;
+}
+
+.vestuario h1{
+    display: inline;
+    font-size: 80px;
+}
+
+.vestuario img{
+    display: inline;
+    width: 60px;
+    margin-left: 10px;
+}
+
+.vestuario button{
+    border: none;
+    background-color: #D9D9D9;
+    padding: 20px;
+    width: 641px;
+    box-shadow: 5px 5px 10px rgb(59, 59, 59);
+    border-radius: 10px;
+}
+
+.vestuario button:hover{
+    cursor: pointer;
+}
+
+.underwear{
+    text-align: center;
+}
+
+.underwear a{
+    text-decoration: none;
+    color: #000;
+}
+
+.underwear h1{
+    display: inline;
+    font-size: 80px;
+}
+
+.underwear img{
+    display: inline;
+    width: 60px;
+    margin-left: 10px;
+}
+
+.underwear button{
+    border: none;
+    background-color: #D9D9D9;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 10px rgb(59, 59, 59);
+    border-radius: 10px;
+}
+
+.underwear button:hover{
+    cursor: pointer;
+}
+
+.underwear button:active{
+    box-shadow: none;
+}
+
+.vestuario button:active{
+    box-shadow: none;
+}
+
+.calcados button:active{
+    box-shadow: none;
+}
+
+.calcados{
+    text-align: center;
+}
+
+.calcados a{
+    text-decoration: none;
+    color: #000;
+}
+
+.calcados h1{
+    display: inline;
+    font-size: 80px;
+}
+
+.calcados img{
+    display: inline;
+    width: 60px;
+    margin-left: 10px;
+}
+
+.calcados button{
+    border: none;
+    background-color: #D9D9D9;
+    padding: 20px;
+    width: 641px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    box-shadow: 5px 5px 10px rgb(59, 59, 59);
+    border-radius: 10px;
+}
+
+.calcados button:hover{
+    cursor: pointer;
+}
+
+.nossas-marcas{
+    background-color: #D9D9D9;
+    margin: 20px;
+    padding: 0 190px 30px;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.nossas-marcas h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.nossas-marcas img{
+    width: 300px;
+}
+
+.logos{
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.baw{
+    background-color: #fff;
+    padding: 40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 40px;
+    float: left;
+    text-align: center;
+}
+
+.baw img{
+    padding: 82px 0px;
+    width: 200px;
+}
+
+.approve{
+    background-color: #fff;
+    padding: 40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 40px;
+    float: left;
+}
+
+.approve img{
+    width: 200px;
+    padding: 62px 0;    
+}
+
+.nike{
+    background-color: #fff;
+    padding: 40px;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 40px;
+    float: left;
+}
+.nike img{
+    border-radius: 50%;
+    width: 200px;
+}
+
+
+.noticias{
+    text-align: center;
+}
+
+.noticias h1{
+    font-size: 50px;
+    font-style: italic;
+    color: #000;
+}
+
+.img-noticias{
+    display: inline;
+}
+
+.img-noticias img{
+    width: 400px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+
+.botao-whats{
+    background-color: #235B22;
+    width: 210px;
+    text-align: left;
+    padding: 10px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.botao-whats:active{
+    box-shadow: none;
+}
+
+.botao-whats a{ 
+    text-decoration: none;
+    color: #fff;
+}
+
+.botao-whats button{
+    background-color: #235B22;
+    border: none;
+}
+
+.botao-whats button img{
+    width: 30px;
+    float: left;
+}
+
+footer{
+    background-color: #D9D9D9;
+    border-top: solid 2px #000;
+}
+
+.logo-footer{
+    text-align: center;
+    padding: 30px;
+}
+
+.logo-footer img{
+    width: 150px;
+}
+
+.logo-footer p{
+    margin: 0;
+}
+
+.contato-footer{
+    text-align: center;
+    padding-bottom: 20px;
+}
