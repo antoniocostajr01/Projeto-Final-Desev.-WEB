@@ -86,8 +86,56 @@ function inserirUsuarios($connect) {
 
         $adm = isset($_POST['adm']) ? 1 : 0;
 
+
+        $nomeArquivo = null;
+        $tipo = null;
+        $nomeTemporario = null;
+
+        // Verificação de imagem
+        if (!empty($_FILES['arquivo']['name'])) {
+		 	
+            $nomeArquivo = $_FILES['arquivo']['name'];
+            $tipo = $_FILES['arquivo']['type'];
+            $nomeTemporario = $_FILES['arquivo']['tmp_name'];
+            $tamanho = $_FILES['arquivo']['size'];
+            $erros = array();
+
+            $tamanhoMaximo = 1024 * 1024 * 5; //5MB
+            if ($tamanho > $tamanhoMaximo) {
+                $erros[] = "Seu arquivo excede o tamanho máximo<br>";
+            }
+
+            $arquivosPermitidos = ["png", "jpg", "jpeg"];
+            $extensao = pathinfo($nomeArquivo, PATHINFO_EXTENSION);
+            if ( !in_array($extensao, $arquivosPermitidos) ) {
+                $erros[] = "Arquivo não permitido.<br>";
+            }
+
+           $typesPermitidos = ["image/png", "image/jpg", "image/jpeg"];
+           if ( !in_array($tipo, $typesPermitidos) ) {
+                $erros[] = "Tipo de arquivo não permitido.<br>";
+           }
+        }
+
         if (empty($erros)) {
-            $query = "INSERT users (nome, email, senha, adm, data_cadastro) VALUES ('$nome', '$email', '$senha', $adm, NOW())";
+            // $nomeArquivo = $_FILES['arquivo']['name'];
+            // $tipo = $_FILES['arquivo']['type'];
+            // $nomeTemporario = $_FILES['arquivo']['tmp_name'];
+
+            // Adiciona a imagem
+            $caminho = "uploads-img/";
+            $hoje = date("d-m-Y_h-i");
+            $user = $_POST['nome'];
+            //$novoNome = $hoje."-".$nomeArquivo;
+            $novoNome = $user."-". $nomeArquivo;
+
+            if(move_uploaded_file($nomeTemporario, $caminho.$novoNome)) {
+                echo "Upload feito com Sucesso!";
+            }else{
+                echo "Erro ao enviar o arquivo!";
+            }
+
+            $query = "INSERT users (nome, email, senha, imagem, adm, data_cadastro) VALUES ('$nome', '$email', '$senha', '$novoNome', $adm, NOW())";
             $executar = mysqli_query($connect, $query);
 
             if ($executar) {

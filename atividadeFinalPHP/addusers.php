@@ -1,5 +1,5 @@
 <?php
-     require_once"/xampp/htdocs/atividadeFinalPHP/function.php";
+     require_once"/xampp/htdocs/GitHub\Projeto-Final-Desev.-WEB/atividadeFinalPHP/function.php";
      session_start(); 
      $seguranca = isset($_SESSION['ativa']) ? TRUE : header("location: login.php");
 ?>
@@ -39,6 +39,7 @@
      <input type="password" name="repetesenha" placeholder="Confirme a senha">
      <input type="checkbox" id="adm1" name="adm" value="Permissões">
      <label for="adm">Permissões de Administrador</label><br>
+     <input type="file" name="arquivo"> 
      <input type="submit" name="cadastrar" value="Cadastrar">
 </form>
 

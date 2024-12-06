@@ -1,5 +1,5 @@
 <?php
-    require_once"/xampp/htdocs/atividadeFinalPHP/function.php";
+    require_once"/xampp/htdocs/GitHub\Projeto-Final-Desev.-WEB/atividadeFinalPHP/function.php";
     session_start(); 
     $seguranca = isset($_SESSION['ativa']) ? TRUE : header("location: login.php");
 ?>
